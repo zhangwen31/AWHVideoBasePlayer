@@ -1,0 +1,6 @@
+framework module AWHVideoBasePlayer {
+  umbrella header "AWHVideoBasePlayer.h"
+  export *
+
+  module * { export * }
+}
