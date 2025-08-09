@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AWHVideoBasePlayer"
-  s.version      = "1.0.1"
+  s.version      = "1.0.0"
   s.summary      = "A short description of AWHVideoBasePlayer."
 
   # This description is used to generate tags and improve search results.
@@ -210,7 +210,7 @@ Pod::Spec.new do |s|
   s.dependency 'MJExtension'
   s.dependency 'YYImage'
   s.dependency 'AFNetworking'
-  s.dependency 'Charts'
+  s.dependency 'DGCharts'
   s.dependency 'MJRefresh'
   s.dependency 'AWHBoneResources'
   s.dependency 'IJKMediaFramework'
