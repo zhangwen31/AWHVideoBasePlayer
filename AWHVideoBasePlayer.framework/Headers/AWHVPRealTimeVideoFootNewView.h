@@ -18,6 +18,7 @@ typedef void (^AWHVPRealTimeVideoReturnTitleBlock)(NSString *title, BOOL isSelec
 @property(nonatomic,strong)AWHBBCarModel *model;
 @property(nonatomic,copy)AWHVPRealTimeVideoReturnTitleBlock ReturnTitleBlock;
 - (void)closeAllFunction;
+- (void)closeVoiceFunction;
 
 @end
 
