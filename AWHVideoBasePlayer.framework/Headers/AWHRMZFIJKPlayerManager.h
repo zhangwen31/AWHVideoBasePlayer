@@ -25,10 +25,11 @@
 #import <Foundation/Foundation.h>
 #import <AWHVideoBasePlayer/AWHRMZFPlayerMediaPlayback.h>
 #import <IJKMediaFramework/IJKMediaFramework.h>
+#import <AWHVideoBasePlayer/AWHVBPIJKFFMoviePlayerController.h>
 
 @interface AWHRMZFIJKPlayerManager : NSObject <AWHRMZFPlayerMediaPlayback>
 
-@property (nonatomic, strong, readonly) IJKFFMoviePlayerController *player;
+@property (nonatomic, strong, readonly) AWHVBPIJKFFMoviePlayerController *player;
 
 @property (nonatomic, strong, readonly) IJKFFOptions *options;
 

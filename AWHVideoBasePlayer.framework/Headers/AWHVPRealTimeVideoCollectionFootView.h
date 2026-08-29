@@ -16,11 +16,16 @@ typedef void(^CodeSelectBlock)(NSString *string);
 
 @property (nonatomic, assign) AWHVPMovieScalingMode movieScalingMode;
 
+@property(nonatomic,strong,readonly)UIButton *playerBtn;
+@property(nonatomic,strong,readonly)UILabel *channelLab;
+
 @property (nonatomic, strong) NSString *codeName;
 
 @property (nonatomic, assign) CGFloat spacing;
 //是否关闭全屏
 @property (nonatomic, assign) BOOL isCloseFill;
+
+@property(nonatomic,assign,readonly) BOOL isLoading;
 
 @property(nonatomic,copy)CodeSelectBlock CodeSelectBlock;
 @property(nonatomic,copy)void (^selectClick)(AWHVPVideoPlayerModel *model);

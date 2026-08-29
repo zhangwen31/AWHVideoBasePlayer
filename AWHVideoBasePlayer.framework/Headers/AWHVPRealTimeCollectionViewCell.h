@@ -8,10 +8,12 @@
 #import <UIKit/UIKit.h>
 #import <IJKMediaFramework/IJKMediaFramework.h>
 #import <AWHVideoBasePlayer/AWHVPVideoPlayerModel.h>
+#import <AWHVideoBasePlayer/AWHVBPIJKFFMoviePlayerController.h>
+
 NS_ASSUME_NONNULL_BEGIN
-typedef void(^ReturnSelectTitle)(NSString *title,IJKFFMoviePlayerController *player);
+typedef void(^ReturnSelectTitle)(NSString *title,AWHVBPIJKFFMoviePlayerController *player);
 @interface AWHVPRealTimeCollectionViewCell : UICollectionViewCell
-@property(nonatomic,strong)IJKFFMoviePlayerController *player;
+@property(nonatomic,strong)AWHVBPIJKFFMoviePlayerController *player;
 @property (nonatomic, strong) AWHVPVideoPlayerModel *model;
 @property (nonatomic, strong) NSString *carId;
 @property(nonatomic,copy)ReturnSelectTitle ReturnSelectTitle;

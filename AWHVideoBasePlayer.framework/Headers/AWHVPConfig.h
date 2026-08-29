@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AWHVideoCacheModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -43,6 +44,42 @@ NS_ASSUME_NONNULL_BEGIN
  * 44: 服务器带宽已满，请稍后再试
  */
 + (NSString *)getVideoStatusDescription:(NSInteger)status;
+
+/// 获取平台视频目录地址
++ (NSString *)getPlatformVideoDirectoryPath;
+
+/// 获取平台视频目录名称解析内容
++ (NSDictionary *)getPlatformVideoNameFile;
+
+/// 保存平台视频目录名称解析内容
+/// @param dict 名称解析内容  md5: name
++ (void)savePlatformVideoNameFile:(NSDictionary *)dict;
+
+/// 校验沙盒 Video/Platform 目录下是否存在指定视频文件
+/// @param targetFileName 目标文件名（如 @"通立设备.1(2025-12-04 11.12.16 - 2025-12-04 11.12.23).mp4"）
+/// @return YES：存在；NO：不存在
++ (BOOL)isVideoExistsWithFileName:(NSString *)targetFileName;
+
+/// 获取平台视频缓存数组名称
+/// @return 所有视频MP4数组
++ (NSArray<AWHVideoCacheModel *> *)getPlatformVideos;
+
+#pragma mark - 批量删除：删除全部缓存视频
+/// 删除沙盒 Video/Platform 目录下所有视频文件
+/// @param completion 回调（success：是否删除成功；deletedCount：成功删除的文件数；error：错误信息）
++ (void)deleteAllCachedPlatformVideosWithCompletion:(void(^)(BOOL success, NSInteger deletedCount, NSError *error))completion;
+
+#pragma mark - 批量删除：删除指定视频列表
+/// 删除指定文件名的视频（精准匹配）
+/// @param fileNames 要删除的视频文件名数组（如 @[@"video1.mp4", @"video2.mp4"]）
+/// @param completion 回调
++ (void)deleteSpecifiedPlatformVideosWithFileNames:(NSArray<NSString *> *)fileNames completion:(void(^)(BOOL success, NSInteger deletedCount, NSError *error))completion;
+
+#pragma mark - 批量删除：删除过期视频（按时间筛选）
+/// 删除指定时间之前的缓存视频（如 7天前的视频）
+/// @param expiredDays 过期天数（如 7 表示删除 7天前及更早的视频）
+/// @param completion 回调
++ (void)deleteExpiredPlatformVideosWithExpiredDays:(NSInteger)expiredDays completion:(void(^)(BOOL success, NSInteger deletedCount, NSError *error))completion;
 
 @end
 

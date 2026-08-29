@@ -15,4 +15,6 @@ FOUNDATION_EXPORT const unsigned char AWHVideoBasePlayerVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <AWHVideoBasePlayer/PublicHeader.h>
 
-
+#import <AWHVideoBasePlayer/AWHVPConfig.h>
+#import <AWHVideoBasePlayer/AWHVideoManagerViewController.h>
+#import <AWHVideoBasePlayer/AWHVBPIJKFFMoviePlayerController.h>

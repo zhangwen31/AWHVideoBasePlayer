@@ -8,6 +8,7 @@
 #import <UIKit/UIKit.h>
 #import <IJKMediaFramework/IJKMediaFramework.h>
 #import <AWHVideoBasePlayer/AWHVPVideoPlayerModel.h>
+#import <AWHVideoBasePlayer/AWHVBPIJKFFMoviePlayerController.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) AWHVPVideoPlayerModel *model;
 @property (nonatomic, strong) NSString *carId;
-@property(nonatomic,strong)IJKFFMoviePlayerController *player;
+@property(nonatomic,strong)AWHVBPIJKFFMoviePlayerController *player;
 
 @property(nonatomic,copy)void (^clearBackClick)(void);
 @property(nonatomic,copy)void (^reconnectClick)(AWHVPVideoPlayerModel *model);

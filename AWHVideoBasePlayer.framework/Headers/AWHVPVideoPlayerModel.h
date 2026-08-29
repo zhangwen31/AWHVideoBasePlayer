@@ -57,7 +57,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) NSInteger num;
 
-@property (nonatomic, strong) AWHVPCarVideoModel *model;
+@property (nonatomic, strong) AWHVPCarVideoModel *videoModel;
 /// 是否隐藏
 @property (nonatomic, assign) BOOL isHidden;
 
