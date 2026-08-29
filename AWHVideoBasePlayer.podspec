@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AWHVideoBasePlayer"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "A short description of AWHVideoBasePlayer."
 
   # This description is used to generate tags and improve search results.

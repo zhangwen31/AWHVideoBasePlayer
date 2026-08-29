@@ -8412,6 +8412,10 @@
 		<data>
 		GDMzlG+bAhIjOamOV+Em8STm78E=
 		</data>
+		<key>Headers/AWHVBPIJKFFMoviePlayerController.h</key>
+		<data>
+		+5LehYkAwPS1+P3jDEr3whleNQ8=
+		</data>
 		<key>Headers/AWHVBPPlatformVideoDownloadView.h</key>
 		<data>
 		2P3LX8luxNUy00lpf+1vEgKolqM=
@@ -8574,7 +8578,7 @@
 		</data>
 		<key>Headers/AWHVideoCacheModel.h</key>
 		<data>
-		Y2fEA+KO18Kh+WmhPi5wdBfjA7M=
+		omEyeWuFsYZG/qP71Y3wrGGtWMI=
 		</data>
 		<key>Headers/AWHVideoManagerViewController.h</key>
 		<data>
@@ -23477,6 +23481,13 @@
 			FXnSf1kpCNelinszN4JmNPuWA+Nr82IZCfldQN63Yc4=
 			</data>
 		</dict>
+		<key>Headers/AWHVBPIJKFFMoviePlayerController.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NC2ZReezuVtrc1I7RvEGOYfWQ+LFD3TsmO9GsnaJmSg=
+			</data>
+		</dict>
 		<key>Headers/AWHVBPPlatformVideoDownloadView.h</key>
 		<dict>
 			<key>hash2</key>
@@ -23761,7 +23772,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2bPYYmHDRcjLf66WlZXXVE//DK+cLD5mrX60nrNUQuk=
+			CYmBHOJYD9RyYf16CPhhd6GojaZt8VlDngF4gGKBCno=
 			</data>
 		</dict>
 		<key>Headers/AWHVideoManagerViewController.h</key>
